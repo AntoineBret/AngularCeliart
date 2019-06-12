@@ -1,18 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/home.component';
+import { HomeRoutingModule } from './home.routing';
+import {SharedModule} from '@app/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    HomeRoutingModule
-  ],
-  providers: [],
-  bootstrap: [HomeComponent]
+    declarations: [
+        HomeComponent
+    ],
+    imports: [
+        SharedModule,
+        HomeRoutingModule
+    ],
+    exports: [],
+    providers: []
 })
-export class HomeModule { }
+export class HomeModule {}

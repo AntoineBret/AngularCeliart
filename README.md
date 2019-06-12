@@ -17,8 +17,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
            |-- home    
                |-- [+] components    
                |-- [+] pages    
-               |-- home-routing.module.ts    
-               |-- home.module.ts    
+               |-- app-routing.module.ts    
+               |-- app.module.ts    
          |-- core    
            |-- [+] authentication    
            |-- [+] footer    
@@ -45,3 +45,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
               |-- _base.scss    
               |-- styles.scss
 
+### index.ts
+
+We can import more than one component, module from same import statement even though they are in different .ts files.
+This is possible because of index.ts file.  
+"Typescript module resolution picks up index.ts file from folder name if it is there and try to import packages."  
+We can now import all these components and module with a single statement  
